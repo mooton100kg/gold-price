@@ -10,4 +10,4 @@ price_tag = doc.find_all(["td"] ,string="ทองคำแท่ง")
 parent = price_tag[0].parent
 price = parent.find_all(["td"], class_="em bg-em g-d")[1]
 
-print(price)
+print(price.text)
